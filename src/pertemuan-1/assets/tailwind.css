@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@font-face {
+    font-family: "Instrument Sans";
+    src: url("/public/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
+}
+
+@font-face {
+    font-family: "Inter";
+    src: url("/public/fonts/Inter-VariableFont_opsz,wght.ttf");
+}
+
+@theme {
+  --font-instrument: "Instrument Sans", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  --color-latar: #f2f6fa; /* Warna latar Modernize lebih ke abu-biru muda */
+  --color-teks: #2a3547;  /* Warna teks utama Modernize */
+  --color-teks-samping: #5a6a85;
+  --color-garis: #ebf1f6; 
+  --color-hijau: #13deb9; 
+  --color-merah: #fa896b; 
+  --color-biru: #5d87ff; /* Biru khas Modernize */
+  --color-kuning: #ffae1f;
+}
+body {
+    @apply font-instrument bg-[var(--color-latar)] text-[var(--color-teks)];
+}
