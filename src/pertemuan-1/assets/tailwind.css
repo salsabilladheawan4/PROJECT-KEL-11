@@ -1,28 +1,21 @@
 @import "tailwindcss";
 
-@font-face {
-    font-family: "Instrument Sans";
-    src: url("/public/fonts/InstrumentSans-VariableFont_wdth,wght.ttf");
-}
-
-@font-face {
-    font-family: "Inter";
-    src: url("/public/fonts/Inter-VariableFont_opsz,wght.ttf");
-}
-
 @theme {
   --font-instrument: "Instrument Sans", sans-serif;
-  --font-inter: "Inter", sans-serif;
-
-  --color-latar: #f2f6fa; /* Warna latar Modernize lebih ke abu-biru muda */
-  --color-teks: #2a3547;  /* Warna teks utama Modernize */
-  --color-teks-samping: #5a6a85;
-  --color-garis: #ebf1f6; 
-  --color-hijau: #13deb9; 
-  --color-merah: #fa896b; 
-  --color-biru: #5d87ff; /* Biru khas Modernize */
-  --color-kuning: #ffae1f;
+  
+  /* Palette Teamify */
+  --color-bg-main: #F8FAFF;
+  --color-text-dark: #2D2D2D;
+  --color-text-muted: #94A3B8;
+  --color-primary: #7367F0; /* Indigo Utama */
+  --color-primary-light: #F0EEFF;
+  
+  /* Aksen Chart & Stats */
+  --color-accent-orange: #FF9F43;
+  --color-accent-cyan: #00CFE8;
+  --color-accent-red: #EA5455;
 }
+
 body {
-    @apply font-instrument bg-[var(--color-latar)] text-[var(--color-teks)];
+    @apply font-instrument bg-[var(--color-bg-main)] text-[var(--color-text-dark)] antialiased;
 }
